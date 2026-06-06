@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: rei-line-bot
+    env: node
+    plan: free
+    buildCommand: npm install --no-audit --no-fund --package-lock=false
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DATA_DIR
+        value: ./data
+      - key: PUBLIC_BASE_URL
+        sync: false
+      - key: LINE_CHANNEL_ACCESS_TOKEN
+        sync: false
+      - key: LINE_CHANNEL_SECRET
+        sync: false
