@@ -1,0 +1,18 @@
+{
+  "name": "rei-line-bot",
+  "version": "0.5.0",
+  "description": "LINE-based real estate investment evaluation bot for Taiwan property investment decisions.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
